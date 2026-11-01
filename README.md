@@ -124,7 +124,7 @@ $ sudo systemctl restart cron.service
     gunzip < mariadb_backup_xxxx.sql.gz | docker exec -i freescout-db mariadb -u root -p<your_root_password>
     ```
 
-    -To restore only freescout database:
+    - To restore only freescout database:
     ```bash
     docker exec -i freescout-db mariadb -u root -p<your_root_password> -e "DROP DATABASE IF EXISTS freescout;"
     docker exec -i freescout-db mariadb -u root -p<your_root_password> -e "CREATE DATABASE freescout;"
